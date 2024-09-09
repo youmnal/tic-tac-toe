@@ -1,0 +1,91 @@
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-image: url(./image.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(54, 54, 90, 0.505);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 400px; /* Fixed width */
+}
+
+h1 {
+    font-size: 36px;
+    color: #fdfefe;
+}
+
+#game-options {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #2a4159;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 30px;
+    margin-bottom: 15px;
+    font-size: 18px; /* Increased font size */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #121d2a;
+    transform: scale(1.05);
+}
+
+#game-board {
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 100px; /* Increased size */
+    height: 100px; /* Increased size */
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px; 
+    padding-left:  30px;
+    cursor:pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.cell:hover {
+    background-color: rgba(200, 200, 200, 0.5);
+    transform: scale(1.05);
+}
+
+.hidden {
+    display:none;
+    
+}
+
+#message {
+    font-size: 24px;
+    color: #FF4500;
+    margin-top: 5px;
+}
+
+#restart {
+    background-color: #1da93e89;
+    margin-top: 15px;
+}
+
+#restart:hover {
+    background-color: #155222;
+}
